@@ -5,7 +5,9 @@ import 'package:instro/size_config.dart';
 class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-  SizeConfig().init(context);
-    body: Body();
+    SizeConfig().init(context);
+    return Scaffold(
+      body: Body(),
+    );
   }
 }

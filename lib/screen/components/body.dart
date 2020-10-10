@@ -8,26 +8,60 @@ class Body extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                "Login",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: size.height * 0.03),
-              TextField(
-                cursorColor: kPrimaryColor,
-                decoration: InputDecoration(
-                  icon: Icon(
-                    Icons.accessibility,
-                    color: kPrimaryColor,
-                  ),
-                  hintText: 'username',
-                  border: InputBorder.none,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 50.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "Welcome to Instro App",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                 ),
-              ),
-            ],
+                SizedBox(height: size.height * 0.05),
+                Image(
+                  image: AssetImage('assets/graphics/login.png'),
+                ),
+                SizedBox(height: size.height * 0.04),
+                Padding(
+                  padding: const EdgeInsets.only(left: 50.0),
+                  child: Column(
+                    children: <Widget>[
+                      TextField(
+                        cursorColor: kPrimaryColor,
+                        decoration: InputDecoration(
+                          icon: Icon(
+                            Icons.accessibility,
+                            color: kPrimaryColor,
+                          ),
+                          hintText: 'Email Address',
+                          border: InputBorder.none,
+                        ),
+                      ),
+                      TextField(
+                        cursorColor: kPrimaryColor,
+                        decoration: InputDecoration(
+                          icon: Icon(
+                            Icons.vpn_key,
+                            color: kPrimaryColor,
+                          ),
+                          hintText: 'Password',
+                          border: InputBorder.none,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                RaisedButton(
+                  onPressed: () {},
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    'LOGIN',
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
