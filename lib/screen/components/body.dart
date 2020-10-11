@@ -22,7 +22,7 @@ class Body extends StatelessWidget {
                 ),
                 SizedBox(height: size.height * 0.05),
                 Image(
-                  image: AssetImage('assets/graphics/splash1.png'),
+                  image: AssetImage('assets/graphics/splash2.png'),
                 ),
                 SizedBox(height: size.height * 0.04),
                 Padding(
@@ -42,6 +42,7 @@ class Body extends StatelessWidget {
                       ),
                       TextField(
                         cursorColor: kPrimaryColor,
+                        obscureText: true,
                         decoration: InputDecoration(
                           icon: Icon(
                             Icons.vpn_key,

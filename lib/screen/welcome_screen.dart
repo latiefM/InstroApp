@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instro/screen/components/background.dart';
 import 'package:instro/screen/components/body.dart';
 import 'package:instro/size_config.dart';
 
