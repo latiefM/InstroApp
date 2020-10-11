@@ -14,7 +14,7 @@ class Body extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  "Welcome to Instro App",
+                  "Instro App",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
