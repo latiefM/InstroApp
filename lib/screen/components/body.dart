@@ -15,11 +15,14 @@ class Body extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "Welcome to Instro App",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                  ),
                 ),
                 SizedBox(height: size.height * 0.05),
                 Image(
-                  image: AssetImage('assets/graphics/login.png'),
+                  image: AssetImage('assets/graphics/splash1.png'),
                 ),
                 SizedBox(height: size.height * 0.04),
                 Padding(
@@ -30,7 +33,7 @@ class Body extends StatelessWidget {
                         cursorColor: kPrimaryColor,
                         decoration: InputDecoration(
                           icon: Icon(
-                            Icons.accessibility,
+                            Icons.email,
                             color: kPrimaryColor,
                           ),
                           hintText: 'Email Address',
@@ -59,7 +62,7 @@ class Body extends StatelessWidget {
                   child: Text(
                     'LOGIN',
                   ),
-                )
+                ),
               ],
             ),
           ),
