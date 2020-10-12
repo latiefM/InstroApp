@@ -3,6 +3,7 @@ import 'package:instro/constants.dart';
 
 class Background extends StatelessWidget {
 
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +15,7 @@ class Background extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(300.0),
+                  bottomRight: Radius.circular(400.0),
                 ),
               ),
             )

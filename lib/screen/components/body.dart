@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:instro/constants.dart';
+import 'package:instro/screen/components/background.dart';
+import 'package:instro/screen/components/rounded_input_field.dart';
+import 'package:instro/screen/components/rounded_password_field.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -20,41 +23,15 @@ class Body extends StatelessWidget {
                     fontSize: 25,
                   ),
                 ),
-                SizedBox(height: size.height * 0.05),
+                SizedBox(height: size.height * 0.0),
                 Image(
-                  image: AssetImage('assets/graphics/splash2.png'),
+                  image: AssetImage('assets/graphics/login.png'),
                 ),
-                SizedBox(height: size.height * 0.04),
-                Padding(
-                  padding: const EdgeInsets.only(left: 50.0),
-                  child: Column(
-                    children: <Widget>[
-                      TextField(
-                        cursorColor: kPrimaryColor,
-                        decoration: InputDecoration(
-                          icon: Icon(
-                            Icons.email,
-                            color: kPrimaryColor,
-                          ),
-                          hintText: 'Email Address',
-                          border: InputBorder.none,
-                        ),
-                      ),
-                      TextField(
-                        cursorColor: kPrimaryColor,
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          icon: Icon(
-                            Icons.vpn_key,
-                            color: kPrimaryColor,
-                          ),
-                          hintText: 'Password',
-                          border: InputBorder.none,
-                        ),
-                      ),
-                    ],
-                  ),
+                RoundedInputField(
+                  hintText: 'Email',
                 ),
+                RoundedPasswordField(),
+          
                 RaisedButton(
                   onPressed: () {},
                   shape: RoundedRectangleBorder(
