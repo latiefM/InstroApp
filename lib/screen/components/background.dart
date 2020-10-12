@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:instro/constants.dart';
 
+class Background extends StatelessWidget {
 
-class Background extends StatefulWidget {
-  @override
-  _BackgroundState createState() => _BackgroundState();
-}
-
-class _BackgroundState extends State<Background> {
   @override
   Widget build(BuildContext context) {
-    Color primary = Theme.of(context).primaryColor;
-    void initState() {
-      super.initState();
-    }
-
-    return Scaffold(backgroundColor: kPrimaryColor, body: Container());
+    return Scaffold(
+        backgroundColor: kPrimaryColor,
+        body: ListView(
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height - 0.0,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(300.0),
+                ),
+              ),
+            )
+          ],
+        ));
   }
 }
