@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instro/screen/components/text_field_container.dart';
+import 'package:instro/screen/login_screen/components/text_field_container.dart';
 import 'package:instro/constants.dart';
 
 class RoundedInputField extends StatelessWidget {
