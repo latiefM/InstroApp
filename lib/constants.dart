@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-const kPrimaryColor = Color(0xFF6C63FF);
-const kPrimaryLightColor = Color(0xFFDDDDEA);
+const kPrimaryColor = Color(0xFF7B3F00);
+const kPrimaryLightColor = Color(0xFFFFC98F);
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
   colors: [Color(0xFFFFA53E), Color(0xFFFF7643)],
 );
-const kSecondaryColor = Color(0xFF979797);
-const kTextColor = Color(0xFF757575);
+const kSecondaryColor = Color(0xFF8506);
+const kTextColor = Color(0xFFFFC98F);
 
 const kAnimationDuration = Duration(milliseconds: 200);

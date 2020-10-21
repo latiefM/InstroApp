@@ -15,11 +15,12 @@ class SearchField extends StatelessWidget {
           horizontal: getProportionateScreenWidth(30),
         ),
         child: ClayContainer(
-          color: kPrimaryLightColor,
+          color: kPrimaryColor,
           height: MediaQuery.of(context).size.height * 0.06,
           width: MediaQuery.of(context).size.width * 0.80,
           borderRadius: 20,
           child: TextField(
+            style: TextStyle(color: kTextColor),
             onChanged: (value) => print(value),
             decoration: InputDecoration(
               contentPadding: EdgeInsets.symmetric(
@@ -29,7 +30,8 @@ class SearchField extends StatelessWidget {
               focusedBorder: InputBorder.none,
               enabledBorder: InputBorder.none,
               hintText: "Search product",
-              prefixIcon: Icon(Icons.search,color: Colors.black,),
+              hintStyle: TextStyle(color: kTextColor),
+              prefixIcon: Icon(Icons.search, color: kPrimaryLightColor),
             ),
           ),
         ));

@@ -17,17 +17,19 @@ class RoundedInputField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFieldContainer(
       child: TextField(
+        style: TextStyle(color: kTextColor),
         onChanged: onChanged,
-        cursorColor: kPrimaryLightColor,
+        cursorColor: kPrimaryColor,
         decoration: InputDecoration(
           icon: Icon(
             icon,
-            color: kSecondaryColor,
+            color: kPrimaryLightColor,
           ),
           hintText: hintText,
+          hintStyle: TextStyle(color: kTextColor),
           border: InputBorder.none,
         ),
-      )
+      ),
     );
   }
 }

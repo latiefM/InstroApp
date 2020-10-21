@@ -11,7 +11,7 @@ class ClayCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClayContainer(
-      color: kPrimaryLightColor,
+      color: kPrimaryColor,
       height: MediaQuery.of(context).size.height * 0.15,
       width: MediaQuery.of(context).size.width * 0.30,
       borderRadius: 20,
@@ -26,6 +26,8 @@ class ClayCard extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Montserrat-Bold',
+                  color: kTextColor,
+                  
                   fontSize: 16,
                 ),
               ),

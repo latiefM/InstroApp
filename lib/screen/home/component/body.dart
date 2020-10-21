@@ -17,7 +17,6 @@ class Body extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               ClayCard(
-                
                 title: "Inspection",
               ),
               ClayCard(

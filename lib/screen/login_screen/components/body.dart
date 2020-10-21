@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instro/constants.dart';
 import 'package:instro/screen/forget_password_screen/forget_password.dart';
 import 'package:instro/screen/home/home.dart';
-//import 'package:instro/screen/components/background.dart';
+//import 'package:instro/screen/login_screen/components/background.dart';
 import 'package:instro/screen/login_screen/components/rounded_input_field.dart';
 import 'package:instro/screen/login_screen/components/rounded_password_field.dart';
 import 'rounded_button.dart';
@@ -20,13 +20,14 @@ class Body extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  "Instro App",
+                  "INSTRO App",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 35,
-                    color: kPrimaryLightColor,
+                    color: kPrimaryColor,
                   ),
                 ),
+                
                 SizedBox(height: size.height * 0.0),
                 Image(
                   image: AssetImage('assets/graphics/login.png'),
