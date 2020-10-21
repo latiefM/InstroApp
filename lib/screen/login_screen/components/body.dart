@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:instro/constants.dart';
+import 'package:instro/screen/forget_password_screen/forget_password.dart';
 //import 'package:instro/screen/components/background.dart';
 import 'package:instro/screen/login_screen/components/rounded_input_field.dart';
 import 'package:instro/screen/login_screen/components/rounded_password_field.dart';
 import 'rounded_button.dart';
 
 class Body extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -41,7 +41,12 @@ class Body extends StatelessWidget {
                   press: () {},
                 ),
                 SizedBox(height: size.height * 0.02),
-                Text("Forget Password ?"),
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, ForgetPassword.routeName);
+                  },
+                  child: new Text("Forget Password?"),
+                ),
               ],
             ),
           ),

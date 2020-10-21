@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:instro/constants.dart';
 import 'package:instro/screen/forget_password_screen/forget_password.dart';
-import 'package:instro/screen/login_screen/welcome_screen.dart';
-
+import 'package:instro/screen/login_screen/login_screen.dart';
+import 'package:instro/theme.dart';
+import 'package:instro/route.dart';
 
 void main() {
   runApp(new MyApp());
@@ -14,15 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'InstroForm',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        fontFamily: "Montserrat",
-        //textTheme: TextTheme(
-          //  bodyText1: TextStyle(color: kTextColor),
-            //bodyText2: TextStyle(color: kTextColor)),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: ForgetPassword(),
+      theme: theme(),
+      initialRoute: LoginScreen.routeName,
+      routes: routes,
     );
   }
 }
