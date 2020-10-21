@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:instro/screen/forget_password_screen/component/body.dart';
 import 'package:instro/screen/forget_password_screen/forget_sent.dart';
 import 'package:instro/screen/home/home.dart';
 import 'package:instro/screen/login_screen/login_screen.dart';

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instro/screen/login_screen/components/rounded_button.dart';
 import 'package:instro/screen/login_screen/components/rounded_input_field.dart';
-import 'package:instro/screen/login_screen/login_screen.dart';
 import 'package:instro/size_config.dart';
 
 import '../forget_sent.dart';

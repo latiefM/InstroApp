@@ -4,13 +4,12 @@ import 'package:flutter/material.dart';
 import '../../../constants.dart';
 
 class ClayCard extends StatelessWidget {
-  final String title, content, sub;
+  final String title;
 
-  ClayCard({this.title, this.content, this.sub});
+  ClayCard({this.title});
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return ClayContainer(
       color: kPrimaryLightColor,
       height: MediaQuery.of(context).size.height * 0.15,
@@ -24,20 +23,11 @@ class ClayCard extends StatelessWidget {
             children: [
               Text(
                 title,
+                textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 13,
+                  fontFamily: 'Montserrat-Bold',
+                  fontSize: 16,
                 ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    content,
-                    style: TextStyle(
-                      fontSize: 20,
-                    ),
-                  ),
-                ],
               ),
             ],
           ),
