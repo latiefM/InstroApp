@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instro/constants.dart';
 import 'package:instro/screen/forget_password_screen/forget_password.dart';
+import 'package:instro/screen/home/home.dart';
 //import 'package:instro/screen/components/background.dart';
 import 'package:instro/screen/login_screen/components/rounded_input_field.dart';
 import 'package:instro/screen/login_screen/components/rounded_password_field.dart';
@@ -11,7 +12,6 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      //backgroundColor: kSecondaryColor,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -38,7 +38,9 @@ class Body extends StatelessWidget {
                 SizedBox(height: size.height * 0.03),
                 RoundedButton(
                   text: "LOGIN",
-                  press: () {},
+                  press: () {
+                    Navigator.pushNamed(context, HomePage.routeName);
+                  },
                 ),
                 SizedBox(height: size.height * 0.02),
                 InkWell(

@@ -22,7 +22,21 @@ class ForgetSent extends StatelessWidget {
         ),
         title: Text("Back"),
       ),
-      body: Center(child: Text("Check your email inbox")),
+      body: Center(
+          child: Column(
+        children: <Widget>[
+          SizedBox(height: SizeConfig.screenHeight * 0.05),
+          Image(
+            image: AssetImage('assets/graphics/splash2.png'),
+          ),
+          Text(
+            "Check your email inbox...",
+            style: TextStyle(
+              fontSize: 20,
+            ),
+          ),
+        ],
+      )),
     );
   }
 }
