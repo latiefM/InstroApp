@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:clay_containers/clay_containers.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
 
@@ -11,14 +12,17 @@ class SearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.symmetric(
-          horizontal: getProportionateScreenWidth(30),
-        ),
-        child: ClayContainer(
-          color: kPrimaryColor,
-          height: MediaQuery.of(context).size.height * 0.06,
-          width: MediaQuery.of(context).size.width * 0.80,
-          borderRadius: 20,
+        margin:
+            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(30)),
+        height: MediaQuery.of(context).size.height * 0.06,
+        width: MediaQuery.of(context).size.width * 0.80,
+        child: Neumorphic(
+          style: NeumorphicStyle(
+            color: kPrimaryColor,
+            shape: NeumorphicShape.flat,
+            boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(20)),
+            lightSource: LightSource.top,
+          ),
           child: TextField(
             style: TextStyle(color: kTextColor),
             onChanged: (value) => print(value),

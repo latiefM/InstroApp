@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:instro/screen/home/component/clay_card.dart';
 import 'package:instro/screen/home/component/home_header.dart';
+import 'package:instro/screen/home/component/menu_card.dart';
 
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           HomeHeader(),
-          SizedBox(
-            height: 50,
-          ),
+          SizedBox(height: 50),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -26,6 +26,12 @@ class Body extends StatelessWidget {
                 title: "Complete",
               ),
             ],
+          ),
+          SizedBox(
+            height: 50,
+          ),
+          MenuCard(
+            title: "Inspection",
           ),
         ],
       ),
