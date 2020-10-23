@@ -7,7 +7,7 @@ const kPrimaryGradientColor = LinearGradient(
   end: Alignment.bottomRight,
   colors: [Color(0xFFFFA53E), Color(0xFFFF7643)],
 );
-const kSecondaryColor = Color(0xFF8506);
+const kSecondaryColor = Color(0xFFFF8506);
 const kTextColor = Color(0xFFFFC98F);
 
 const kAnimationDuration = Duration(milliseconds: 200);

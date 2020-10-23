@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:instro/constants.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
+import '../../../constants.dart';
 
 class RoundedButton extends StatelessWidget {
   final String text;
@@ -13,24 +14,32 @@ class RoundedButton extends StatelessWidget {
     this.color = kPrimaryColor,
     this.textColor = kTextColor,
   }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
+      width: size.width * 0.9,
       margin: EdgeInsets.symmetric(vertical: 10),
-      width: size.width * 0.8,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(29),
-        child: FlatButton(
-          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-          color: color,
-          onPressed: press,
-          child: Text(
-            text,
-            style: TextStyle(color: textColor, ),
+      child: Column(
+        children: [
+          NeumorphicButton(
+            padding: EdgeInsets.symmetric(vertical: 15, horizontal: 120),
+            onPressed: press,
+            style: NeumorphicStyle(
+              shape: NeumorphicShape.convex,
+              boxShape: NeumorphicBoxShape.roundRect(
+                BorderRadius.circular(20),
+              ),
+              color: color,
+            ),
+            child: Text(
+              text,
+              style: TextStyle(
+                color: textColor,
+              ),
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

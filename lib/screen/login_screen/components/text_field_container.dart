@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:instro/constants.dart';
 
 class TextFieldContainer extends StatelessWidget {
@@ -11,13 +12,16 @@ class TextFieldContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Container(
+    return Neumorphic(
       margin: EdgeInsets.symmetric(vertical: 10),
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-      width: size.width * 0.8,
-      decoration: BoxDecoration(
+      style: NeumorphicStyle(
+        shape: NeumorphicShape.flat,
+        depth: Neumorphic.MIN_DEPTH,
+        boxShape: NeumorphicBoxShape.roundRect(
+          BorderRadius.circular(30),
+        ),
         color: kPrimaryColor,
-        borderRadius: BorderRadius.circular(29),
       ),
       child: child,
     );
