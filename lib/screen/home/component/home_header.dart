@@ -1,4 +1,3 @@
-import 'package:clay_containers/clay_containers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:instro/screen/home/component/rounded_profile.dart';
@@ -19,13 +18,17 @@ class HomeHeader extends StatelessWidget {
       child: Stack(
         overflow: Overflow.visible,
         children: <Widget>[
-          Container(
-            height: size.height * 0.3 - 25,
-            decoration: BoxDecoration(
-              color: kPrimaryLightColor,
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(36),
-                bottomRight: Radius.circular(36),
+          Neumorphic(
+            padding: EdgeInsets.symmetric(horizontal: 15, vertical: 50),
+            style: NeumorphicStyle(
+              color: kPrimaryColor,
+              depth: Neumorphic.MIN_DEPTH,
+              lightSource: LightSource.topLeft,
+              boxShape: NeumorphicBoxShape.roundRect(
+                BorderRadius.only(
+                  bottomLeft: Radius.circular(30),
+                  bottomRight: Radius.circular(30),
+                ),
               ),
             ),
             child: Padding(
@@ -35,12 +38,12 @@ class HomeHeader extends StatelessWidget {
                   NeumorphicText(
                     'Hi!',
                     style: NeumorphicStyle(
-                      color: kPrimaryColor,
+                      color: kPrimaryLightColor,
                       depth: 30,
                     ),
                     textStyle: NeumorphicTextStyle(
                       fontSize: 40,
-                      fontWeight: FontWeight.bold,
+                      //fontWeight: FontWeight.bold,
                     ),
                   ),
                   Spacer(),

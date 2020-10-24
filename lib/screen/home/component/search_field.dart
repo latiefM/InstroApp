@@ -21,7 +21,6 @@ class SearchField extends StatelessWidget {
             color: kPrimaryColor,
             shape: NeumorphicShape.flat,
             boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(20)),
-            lightSource: LightSource.top,
           ),
           child: TextField(
             style: TextStyle(color: kTextColor),

@@ -5,21 +5,22 @@ import '../../../constants.dart';
 
 class MenuCard extends StatelessWidget {
   final String title;
+  final icon;
 
-  MenuCard({this.title});
+  MenuCard({this.title, this.icon});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      // color: kPrimaryColor,
       height: MediaQuery.of(context).size.height * 0.15,
       width: MediaQuery.of(context).size.width * 0.30,
-      //borderRadius: 20,
       child: Neumorphic(
         style: NeumorphicStyle(
           color: kPrimaryColor,
           shape: NeumorphicShape.flat,
           boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(20)),
+          lightSource: LightSource.top,
+          depth: 5,
         ),
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
@@ -27,6 +28,7 @@ class MenuCard extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
+                
                 Text(
                   title,
                   textAlign: TextAlign.center,
@@ -35,6 +37,10 @@ class MenuCard extends StatelessWidget {
                     color: kTextColor,
                     fontSize: 16,
                   ),
+                ),
+                NeumorphicIcon(
+                  icon,
+                  size: 60,
                 ),
               ],
             ),

@@ -49,7 +49,7 @@ class Body extends StatelessWidget {
                         Navigator.pushNamed(context, ForgetPassword.routeName);
                       },
                       child: new Text(
-                        "Forget Password?",
+                        "Forgot Password?",
                         style: TextStyle(color: kPrimaryLightColor),
                       ),
                     )
