@@ -13,7 +13,7 @@ class HomeHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    
     return Container(
       child: Stack(
         overflow: Overflow.visible,

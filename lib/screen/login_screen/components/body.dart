@@ -4,8 +4,7 @@ import 'package:instro/constants.dart';
 import 'package:instro/screen/forget_password_screen/forget_password.dart';
 import 'package:instro/screen/home/home.dart';
 import 'package:instro/screen/login_screen/components/logo.dart';
-import 'package:instro/screen/login_screen/components/rounded_button_new.dart';
-//import 'package:instro/screen/login_screen/components/background.dart';
+
 import 'package:instro/screen/login_screen/components/rounded_input_field.dart';
 import 'package:instro/screen/login_screen/components/rounded_password_field.dart';
 import 'rounded_button.dart';

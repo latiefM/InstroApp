@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:instro/screen/home/component/home_header.dart';
 import 'package:instro/screen/home/component/inprogress_task.dart';
 import 'package:instro/screen/home/component/menu_card.dart';
-import 'package:instro/constants.dart';
+import 'package:instro/screen/routine_form/routine_form.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -17,14 +18,19 @@ class Body extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               MenuCard(
+                onPressed: (){
+                  Navigator.pushNamed(context, RoutineForm.routeName);
+                },
                 title: "Inspection",
                 icon: Icons.assignment,
               ),
               MenuCard(
+                onPressed: (){},
                 title: "Calibration",
                 icon: Icons.assessment,
               ),
               MenuCard(
+                onPressed: (){},
                 title: "Complete",
                 icon: Icons.done_all,
               ),
@@ -32,13 +38,6 @@ class Body extends StatelessWidget {
           ),
           SizedBox(
             height: 35,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20),
-            child: Text(
-              "Inprogress Task",
-              style: TextStyle(color: kTextColor, fontSize: 20),
-            ),
           ),
           InprogressTask(),
         ],

@@ -21,8 +21,17 @@ class InprogressTask extends StatelessWidget {
           padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           child: Container(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Inprogress Task :",
+                  style: TextStyle(color: kPrimaryLightColor, fontSize: 20),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+               
+              ],
             ),
           ),
         ),
