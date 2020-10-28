@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "729449185225",
+    "firebase_url": "https://instro-b3555.firebaseio.com",
+    "project_id": "instro-b3555",
+    "storage_bucket": "instro-b3555.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729449185225:android:d57930c68dc02cd6173218",
+        "android_client_info": {
+          "package_name": "com.example.instro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729449185225-ab9ojtppvr5je98tb1qqpr35pghs1i7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWR2hsDIWBXHqSED9ecj4jmJOR4ijHfZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729449185225-ab9ojtppvr5je98tb1qqpr35pghs1i7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
